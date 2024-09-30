@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=charset, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        <center><b>GENERAL BUS PASS APPLICATION</b></center>
+    </h2>
+    <form action>
+    <fieldset>
+        <legend>Application Details</legend>
+        <label for="Name">Name</label>
+        <input type="text" maxlength="20" name="Name" id="Name" pattern="[A-Za-z]{15,20}" title="Name must be between 15 and 20 characters in length and contains only letters ">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="Father's/Gaurdian's Name">Father's/Gaurdian's Name</label>
+        <input type="text" name="Father's/Gaurdian's Name" id="Father's/Gaurdian's Name">
+        <br>
+        <br>
+        <label for="Date">Date of Birth(dd-mm-yyyy):</label>
+        <input type="Date" name="Date" id="Date">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="gender">Gender:&nbsp; </label>
+        <label for="male">Female</label>
+        <input type="radio" id="male" required>
+        <label for="female">Male</label>
+        <input type="radio" id="female" required>
+        <br>
+        <br>
+        <label for="Age As on ">Age As on</label>
+        <input type="text" name="Age As on" id="Age As on">
+        <label for="Month's">Month's</label>
+        <input type="text" name="Month's" id="Month's" size="4px">
+        <label for="Day's">Day's</label>
+        <input type="text" name="Year's" id="Day's" size="6px">
+        <label for="Year's">Year's</label>
+        <input type="textbox" name="Year's" id="Year's" size="4px">
+        &nbsp;&nbsp;&nbsp;
+        <label for="Aadhaar No:">Aadhaar No:</label>
+        <input typr="Aadhaar No:" id="Aadhaar No:">
+        <br>
+        <br>
+        <label for="Mobile No">Mobile No</label>
+        <input type="Mobile No" name="Mobile No" id="Mobile No">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="E-mail">E-mail Id</label>
+        <input type="E-mail" name="E-mail" id="E-mail">
+        <br>
+        <br>
+        <label for="file">Photo</label>
+        <input type="file" name="file" id="file">
+        <br>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Residential Address Details</legend>
+        <label for="Application Address">Application Address</label>
+        <textarea id="Application Address" row="5" col="15" maxlength="20"></textarea>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="District">District</label>
+        <select name="District" id="District" required>
+            <option value="Warangal">Warangal</option>
+            <option value="Khammam">Hanamkonda</option>
+            <option value="Mahabubabad">Mahabubabad</option>
+        </select>
+        <br>
+        <br>
+        <label for="mandal">Mandal</label>
+        <select name="mandal" id="mandal" required>
+            <option value="Kesamudram">Kesamudram</option>
+            <option value="Ghanpur">Ghanpur</option>
+            <option value="Palakurthi">Palakurthi</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="village">Village</label>
+        <select name="village" id="village" required>
+            <option value="Upparpally">Upparpally</option>
+            <option value="Tigaram">Tigaram</option>
+            <option value="Arpanpally">Arpanpally</option>
+        </select>
+        <br>
+        <br>
+        <label for="pincode">Pincode</label>
+        <input type="text" name="pincode" placeholder="xxxxxx">
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <label for="city">City</label>
+        <select name="city"  id="city">
+            <option value="select">Hyderabad</option>
+            <option value="select">Chennai</option>
+            <option value="select">Banglore</option>
+        </select>
+        <br>
+        <br>
+        <label for="pass type">Pass type</label>
+        <select name="pass type"  id="pass type">
+            <option value disabled selected>---Select option---</option>
+            <option value="select">General pass</option>
+            <option value="select">Student pass</option>
+            <option value="select">Senior annual pass</option>
+        </select>
+        <br>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection</legend>
+        <label for="payment mode">Payment Mode</label>
+        <select id="payment mode">
+            <option value disabled selected>---Select option---</option>
+            <option value="UPI">UPI</option>
+            <option value="cash">cash</option>
+        </select>
+        <br>
+        <br>
+        <label for="delivery">Pass Delivery Mode</label>
+        <select id="delivery">
+            <option value="select">Select Payment Mode </option>
+            <option value="directly">directly</option>
+            <option value="post">post</option>
+        </select>
+        <br>
+        <br>
+        <label for="center">Center at which you want to collect pass</label>
+        <select id="center">
+            <option value="select">---Select option---</option>
+            <option value="kukkatpally">UPI</option>
+            <option value="jntu">cash</option>
+        </select>
+        <br>
+        <br>
+    </fieldset>
+    <center> <input type="submit" value="Submit"></center>
+    
+    </form>
+</body>
+
+</html>

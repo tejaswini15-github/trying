@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot password</title>
+</head>
+<body>
+    <fieldset>
+        <center>
+            <h1>Find Your Account</h1>
+        </center>
+        <hr>
+        <center>
+            <!-- forgot response -->
+            <form action="./forgotResponse.html" method="get">
+                <!-- username or email -->
+                <label for="usernameEmail">Enter your username or email:</label>
+                <input type="text" name="usernameEmail" placeholder="Username or Email" id="usernameEmail" required><br>
+                <br>
+
+                <!-- OTP field with pattern to restrict to exactly 6 digits -->
+                <label for="otp">Enter the one-time password:</label>
+                <input type="text" id="otp" placeholder="One-time Password" name="otp" pattern="\d{6}" inputmode="numeric" maxlength="6" required>
+                <br><br>
+
+
+                <!-- Submit => forgotResponse.html (see form action)  -->
+                <input type="submit" value="Submit">
+
+            </form>
+            
+        </center>
+        
+    </fieldset>
+    
+</body>
+</html>
